@@ -1,0 +1,25 @@
+.section-content {
+    display: flex;
+    height: 640px;
+
+    .fondo-izquierda {
+        background-color: whitesmoke;
+        height: 640px;
+        width: 40%;
+    }
+
+    .imagen-derecha {
+        background: url('../../assets/images/margarita.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 640px;
+    }
+
+    .accordion-bootstrap {
+        position: absolute;
+        left: 10%;
+        right: 50%;
+        margin-top: 100px
+    }
+}
