@@ -1,6 +1,5 @@
 .navbar {
-    background-color: orange;
-    position: sticky;
+    background-color:#4F81C7;
     top: 0px;
     width: 100%;
     height: 60px;
@@ -17,6 +16,7 @@
         margin: 15px;
         color: white;
     }
+ 
 
     .nav-items {
         a {
@@ -24,12 +24,6 @@
             color: white;
             position: relative;
         }
-    }
-
-    // En pantallas grandes no aparece el menu tipo hamburguesa
-    .nav-toggle {
-        display: none;
-    }
 }
 
 // En pantallas mas pequeñas cambiamos la disposicion del menu
@@ -38,7 +32,7 @@
         position: absolute;
         top: 60px;
         left: 0px;
-        background: orange;
+        background:#4F81C7;
         display: flex;
         flex-direction: column;
         width: 100%;

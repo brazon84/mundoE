@@ -1,7 +1,7 @@
 .nosotros-content {
     width: 100%;
     max-width: 75em;
-    height: 100vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,15 +9,18 @@
     border: 20px;
 
     .titulos {
-        background-color: #772920;
+        background-color: #c3bab9;
         margin: 50px;
+       
 
         .titulo-arriba {
-            background-color: red;
+            background-color: rgb(234, 223, 223);
+            font-size: 40px;
         }
 
         .titulo-abajo {
             color: black;
+            font-size: 20px;
         }
     }
 
@@ -27,7 +30,32 @@
     }
 
 }
-
+@media (max-width:425px) {
+    .nosotros-content {
+      height: 300px;
+        .titulos {
+            margin: 20px;
+           
+    
+            .titulo-arriba {
+                
+                font-size: 20px;
+            }
+    
+            .titulo-abajo {
+              
+                font-size: 10px;
+            }
+        }
+    
+        .bloque-texto {
+           
+            margin: 20px;
+        }
+    
+    }  
+    
+}
 
 // .nosotros-content {
 //     display: flex;

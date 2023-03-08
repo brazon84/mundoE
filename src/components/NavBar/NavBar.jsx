@@ -7,7 +7,7 @@ const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <div className="navbar" id='navbar'>
+        <div className="navbar position-fixed" id='navbar'>
             <div className="nav-logo">
                 <Link activeClass='active' to='inicio' spy={true} smooth={true} offset={-70} duration={500} >Grupo 6</Link>
             </div>

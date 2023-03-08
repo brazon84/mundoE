@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './contacto.css'
 
 function Contacto() {
     const [sent, setSent] = useState(false)
@@ -21,7 +21,7 @@ function Contacto() {
                 Accept: "application/json"
             }
         })
-
+    
 
     function validate(input) {
         let errors = {};
@@ -74,12 +74,12 @@ function Contacto() {
     }
 
     return (
-        <div style={{ position: 'relative', marginTop: "160px", top: "100px" }}>
+        <div className='contacto-content d-flex flex-column justify-content-center align-items-center text-center' id='contacto'>
             <div className='center'>
-                {sent ? (<h6 style={{ position: "absolute", left: "360px", color: "lightgreen", textAlign: "right" }}>Message Sent ✅</h6>) : ""}
-                <h6>Contactanos</h6>
-                <form style={{ minHeight: "500px", maxHeight: "650px" }} onSubmit={handleSubmit}>
-                    <div className="txt_field">
+                {sent ? (<h6 style={{  left: "360px", color: "lightgreen", textAlign: "right" }}>Message Sent ✅</h6>) : ""}
+                <h6 className='titulos'>Contactanos</h6>
+                <form  className='formulario border border-dark rounded-top shadow-lg p-3 mb-5 bg-body rounded bg-light'  onSubmit={handleSubmit}>
+                    <div className="txt_field d-flex flex-column-reverse">
                         <input
                             type="text"
                             onChange={handleInputChange}
@@ -91,7 +91,7 @@ function Contacto() {
                         <label htmlFor='name'>Nombre</label>
                         {(errors.name && touched.name) && <p className="error-text"> {errors.name} </p>}
                     </div>
-                    <div className="txt_field">
+                    <div className="txt_field d-flex flex-column-reverse">
                         <input
                             type="email"
                             onChange={handleInputChange}
@@ -103,7 +103,7 @@ function Contacto() {
                         <label htmlFor='email'>Email</label>
                         {(errors.email && touched.email) && <p className="error-text"> {errors.email} </p>}
                     </div>
-                    <div className="txt_field">
+                    <div className="txt_field d-flex flex-column-reverse">
                         <input
                             type="phone"
                             onChange={handleInputChange}
@@ -118,9 +118,9 @@ function Contacto() {
 
 
 
-                    <div className="txt_field">
+                    <div className="txt_field d-flex flex-column-reverse">
                         <textarea
-                            style={{ padding: "8px", height: "100px" }}
+                            style={{ padding: "8px"}}
                             rows="4"
                             onChange={handleInputChange}
                             onBlur={handleOnBlur}
@@ -128,7 +128,7 @@ function Contacto() {
                             value={input.message}
                         />
                         <span></span>
-                        <label htmlFor='message'>Mensaje</label>
+                        <label  htmlFor='message'>Mensaje</label>
                         {(errors.message && touched.message) && <p className="error-text"> {errors.message} </p>}
                     </div>
                     <input type="submit" value="Enviar"

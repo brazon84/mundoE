@@ -15,7 +15,7 @@ const Inicio = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={imagen1} className="d-block w-100" alt="img1" />
+                        <img src={imagen1} className="d-block w-100 object-fit-cover" alt="img1" />
                         <div className="carousel-caption">
                             <h1>Te llevamos a donde lleguen tus pensamientos</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus minima, repellat debitis at autem eum!</p>
@@ -23,7 +23,7 @@ const Inicio = () => {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={imagen2} className="d-block w-100" alt="img2" />
+                        <img src={imagen2} className="d-block w-100 object-fit-cover" alt="img2" />
                         <div className="carousel-caption">
                             <h1>Disfruta de cada momento</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique laborum ab inventore magnam id.</p>
@@ -31,7 +31,7 @@ const Inicio = () => {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={imagen3} className="d-block w-100" alt="img3" />
+                        <img src={imagen3} className="d-block w-100 object-fit-cover" alt="img3" />
                         <div className="carousel-caption">
                             <h1>Vive la aventura</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ut et porro maxime necessitatibus ratione laboriosam quaerat, doloribus eos quis!</p>
