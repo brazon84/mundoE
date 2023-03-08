@@ -61,6 +61,7 @@ function Contacto() {
         try {
             await sendContactForm(input)
             setTouched({})
+            setSent(true)
             setInput({
                 name: "",
                 email: "",
