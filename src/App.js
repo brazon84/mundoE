@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import NavBar from './components/NavBar/NavBar';
 import Inicio from './components/Inicio/Inicio';
 import Nosotros from './components/Nosotros/Nosotros';
@@ -8,8 +8,7 @@ import Servicios from './components/Servicios/Servicios';
 import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
 
-class App extends Component {
-  render() {
+  function App() {
     return (
       <div className="App">
         <NavBar />
@@ -22,6 +21,6 @@ class App extends Component {
       </div>
     );
   }
-}
+
 
 export default App;

@@ -21,7 +21,7 @@ const Servicios = () => {
                         </div>
                     </div>
                     <div className="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
+                        <h2 className="accordion-header" id="headingTwo">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Accordion Item #2
                             </button>
@@ -34,7 +34,7 @@ const Servicios = () => {
                     </div>
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Accordion Item #3
                             </button>
                         </h2>
