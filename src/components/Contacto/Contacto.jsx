@@ -13,12 +13,15 @@ function Contacto() {
     const [errors, setErrors] = useState({})
 
     const sendContactForm = async (data) =>
-        fetch("http://pingruposeis2203.epizy.com/home/vol11_1/epizy.com/epiz_33704435", {
+       // fetch("http://pingruposeis2203.epizy.com/home/vol11_1/epizy.com/epiz_33704435", {
+           // fetch("http://pingruposeis2203.epizy.com/public/",{
+            fetch("http://pin-back-06-2203-production.up.railway.app/api/insertContactos/",{
+
             method: "POST",
             body: JSON.stringify(data),
             headers: {
                 "Content-Type": "application/json",
-                Accept: "application/json"
+                "Accept": "application/json"
             }
         })
     
